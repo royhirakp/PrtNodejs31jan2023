@@ -1,9 +1,12 @@
 const{json } = require('express')
 const express = require('express')
 const mongoose = require('mongoose')
+const cros = require('cors')
+
 // express.json();
 const app = express()
 app.use(json())
+app.use(cros())
 //dot env
 require('dotenv').config()
 // console.log(process.env.MongodbUrl) 
